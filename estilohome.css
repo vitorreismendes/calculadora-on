@@ -451,7 +451,7 @@ p > a > img:hover {
     }
 
     nav {
-        width: 100%;
+        width: auto;
         display: flex;
         flex-wrap: wrap;
     }
