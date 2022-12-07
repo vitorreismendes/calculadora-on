@@ -422,10 +422,11 @@ p > a > img:hover {
         display: flex;
         justify-content: center;
         padding: 10px;
+        width: 90%;
     }
 
     ul > li > a {
-        width: 420px;
+        width: 300px;
     }
 
     nav {
