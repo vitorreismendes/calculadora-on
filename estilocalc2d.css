@@ -229,9 +229,8 @@ form p {
 #valordese  {
     width: 125px;
     display: flex;
-    text-align: center;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 
 .valormedio {
