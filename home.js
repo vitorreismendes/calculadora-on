@@ -80,7 +80,7 @@ function clicarmenu() {
 }
 
 function mudartamanho() {
-    if (window.innerWidth >= 1050) {
+    if (window.innerWidth >= 1041) {
         btmenu.style.display = 'flex'
         bttema.style.display = 'flex'
     } else {
