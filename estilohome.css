@@ -427,8 +427,9 @@ p > a > img:hover {
     }
 
     .headerd {
-        width: 50%;
-        align-items: flex-end;
+        width: 100%;
+        align-items: flex;
+
     
     }
 
@@ -442,7 +443,7 @@ p > a > img:hover {
         display: flex;
         justify-content: center;
         padding: 10px;
-        width: 90%;
+        width: 100%;
     }
 
     ul > li > a {
@@ -475,6 +476,7 @@ p > a > img:hover {
 
     #bttema {
         display: none;
+        text-align: center;
     }
     
 

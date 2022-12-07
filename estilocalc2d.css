@@ -223,19 +223,30 @@ form p {
     width: auto;
 }
 
-#valordese {
-    width: 70%;
+
+
+#valordese  {
+    width: 125px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .valormedio {
-    width:auto;
+    width:100%;
     margin: auto;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
+    display:flex;
     flex-direction: row;
-    justify-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;    
 }
+
+.valormedio > span {
+    width: auto;
+}
+
 
 .formato {
     width:auto;
