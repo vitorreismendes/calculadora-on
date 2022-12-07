@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Juros Compostos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilocalc3jc.css">
+    <script src="calculadorajc.js"></script>
+</head>
+<body onresize="mudartamanho()">
+    <header>
+        <div class="logo">
+            <a href="index.html" target="_self"><img src="../logo-removebg-preview.png" alt="Logo" id="logo"></a>
+        </div>
+        <span id ="burguer" class="material-symbols-outlined" onclick="clicarmenu()">menu</span>
+        <nav id="btmenu" target="_blank">
+            <ul>
+                <li>
+                    <a href="calc1.html" target="_self">Calculadora <br> Normal</a>
+                </li>
+                <li>
+                    <a href="calc2d.html" target="_self">Calculadora <br> Dividendos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="container">
+            <div class="texto">
+                <h1>Calculadora de Juros Compostos</h1>
+
+                <p>
+                    Os juros compostos crescem de forma exponencial, pois sua base de cálculo é sempre em cima do montante anterior. Faça esse cálculo financeiro de forma simples utilizando nossa calculadora!
+                <br>
+                <br>
+                <h2>Como utilizar a calculadora de juros compostos</h2><br>
+                <p>
+                    Preencha o campo valor inicial<br>
+                    Preencha o campo valor mensal (Será somado ao final de cada ciclo)<br>
+                    Preencha a taxa de juros anual<br>
+                    Preencha o campo período por anos<br>
+                    Clique em calcular e veja o resultado<br><br>
+                </p>
+            </div> 
+
+        </div>
+
+        <div class="lados">
+            <div class="blocoe">
+                <form>
+                    <div class="span">
+                        <p>Valor inicial</p>
+                        <p>Valor mensal</p>
+                    </div>
+                    <div class="preencher">
+             
+                        <div class="valores">
+                             <span>R$</span>
+                             <input type="number" name="valorin" id="valorin">
+                        </div>
+                 
+                        <div class="valores">
+                            <span>R$</span>
+                            <input type="number" name="valorm" id="valorm">
+                        </div>
+                    </div>
+                   <div class="span">
+                       <p>Taxa de juros anual</p>
+                       <p>Período em anos</p>
+                   </div>
+                    <div class="preencher">
+            
+                        <div class="valores">
+                            <span>%</span>
+                            <input type="number" name="taxaj" id="taxaj">
+                        </div>
+                
+                        <div class="valores">
+                            <span></span>
+                            <input type="number" name="anos" id="anos">
+                        </div>
+                    </div>
+                    <div class="botoes">
+                        <input type="button" value="Calcular" onclick="calcular()">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </form>
+            </div>
+            <div class="blocod">
+                <div id="res">
+                    <p>Preencha os dados para ver o resultado!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="voltar">
+            <a href="index.html" target="_self"><input type="submit" value="Voltar" id="btvoltar"></a>
+        </div>
+        <div class="texto">
+            
+            <br>
+            <h2>Qual é a fórmula de juros compostos?</h2>
+            <br>
+            <p>
+                Para que você mesmo calcule o juros composto das suas aplicações, utilize uma das fórmulas a seguir: <br><br>
+
+                Calcular rendimento sem depósitos mensais:<br> <strong>M = C * (1 +(i / 100)) ^ n</strong>;<br><br>
+                Calcular rendimento com depósitos mensais:<br> <strong>M = C * (((1 +(i / 100)) ^ n - 1) / (i / 100))</strong>;<br><br>
+                Calcular rendimento com depósito inicial, mais depósitos mensais:<br> <strong>M = (C x ((1 + (i / 100)) ^ n)) + (a * (((((1 + (i / 100))) ^ n ) - 1) / (i / 100)))</strong>.<br><br>
+                
+                Cada letra significa um valor:<br><br>
+                
+                <strong>M</strong> é o montante acumulado, o total da aplicação<br>
+                <strong>C</strong> é o capital investido<br>
+                <strong>i</strong> é a taxa de juros<br>
+                <strong>a</strong> é o aporte mensal<br>
+                <strong>n</strong> é o período de tempo<br><br>
+
+
+                Para que o cálculo faça sentido, você precisa selecionar uma taxa de juros e um período de tempo equivalentes (ambos em anos por exemplo).<br>
+                
+                Além disso, a taxa de juros deve ser indicada em formato decimal.
+            </p>
+            <p>
+                Suponha que você pretenda descobrir qual seria o total de um <strong>investimento (M)</strong> de <strong>R$ 10 mil (C)</strong> a uma <strong>taxa de 15% ao ano (i)</strong>, ao final de <strong>dez anos (n)</strong>.<br><br> Colocando esses valores na fórmula de juros compostos apresentada anteriormente, teremos: <br><br>
+
+                M = 10.000 * (1+(15/100))^10<br>
+                M = 10.000 * (1+0,15)^10<br>
+                M = 10.000 * (1,15)^10<br>
+                M = 10.000 * 4,045<br>
+                M = 40.455,58<br><br>
+                Portanto, o valor que você acumularia com o investimento seria de <strong>R$40.455,58</strong>. Apenas de <strong>juros</strong>, o total obtido seria de <strong>R$30.455,58</strong>.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="esq">
+            <p>
+                Siga-me:        
+                <a href="https://github.com/vitorreismendes" target="_blank"><img src="calculator/211904_social_github_icon.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/vitor-reis-282260212/" target="_blank"><img src="calculator/216394_linkedin_social_icon.png" alt="Linkedin"></a>
+                <a href="https://www.instagram.com/vitorre1s/" target="_blank"><img src="calculator/7422497_instagram_photo_picture_social_icon.png" alt="Instagram"></a>
+            </p>
+        </div>
+        <div class="dir">
+            <p>Desenvolvido por Vitor Reis</p>
+        </div>
+    </footer>
+</body>
+</html>

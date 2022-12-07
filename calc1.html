@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Normal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilocalc1.css">
+    <script src="calculadoran.js"></script>
+</head>
+
+<body onresize="mudartamanho()" >
+    <header>
+        <div class="logo">
+            <a href="index.html" target="_self"><img src="../logo-removebg-preview.png" alt="Logo" id="logo"></a>
+        </div>
+        <span id ="burguer" class="material-symbols-outlined" onclick="clicarmenu()">menu</span>
+        <nav id="btmenu">
+            <ul>
+                <li>
+                    <a href="calc2d.html" target="_self">Calculadora <br> Dividendos</a>
+                </li>
+                <li>
+                    <a href="calc3jc.html" target="_self">Calculadora <br> Juros Compostos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="container">
+            <div class="ladoe">
+                <div class="bloco">
+                    <form name="telaform">
+                        <div class="tela">
+                            <input type="text" name="telares" id="itela" placeholder="0" max="50"></p>
+                        </div>
+                        <div class="botoes">
+                            <div class="linhas">
+                                <input type="button" value="C" name="zerar" onclick="clean()">
+                                <input type="button" value="CE" name="tira1" onclick="back()">
+                                <input type="button" value="+/-" name="negativo" onclick="insert('-')">
+                                <input type="button" value="/" name="dividir" onclick="insert('/')">
+                            </div>
+                            <div class="linhas">
+                                <input type="button" value="7" name="b7" onclick="insert('7')">
+                                <input type="button" value="8" name="b8" onclick="insert('8')">
+                                <input type="button" value="9" name="b9" onclick="insert('9')">
+                                <input type="button" value="+" name="somar" onclick="insert('+')">
+                            </div>
+                            <div class="linhas">
+                                <input type="button" value="4" name="b4" onclick="insert('4')">
+                                <input type="button" value="5" name="b5" onclick="insert('5')">
+                                <input type="button" value="6" name="b6" onclick="insert('6')">
+                                <input type="button" value="-" name="diminuir" onclick="insert('-')">
+                            </div>
+                            <div class="linhas">
+                                <input type="button" value="1" name="b1" onclick="insert('1')">
+                                <input type="button" value="2" name="b2" onclick="insert('2')">
+                                <input type="button" value="3" name="b3" onclick="insert('3')">
+                                <input type="button" value="*" name="multiplicar" onclick="insert('*')">
+                            </div>
+                            <div class="linhas">
+                                <input type="button" value="." name="ponto" onclick="insert('.')">
+                                <input type="button" value="0" name="b0" onclick="insert('0')">
+                                
+                                <input type="button" value="=" name="igual" id="bres" onclick="calcular()">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="linhav"></div>
+            <div class="ladod">
+
+                <h1>Calculadora</h1>
+                <p>
+                    A calculadora comum possibilita a realização de cálculos relacionados à Matemática básica como:
+                    <br>
+                    <br>
+                    Adição (+)<br>
+                    Subtração (-)<br>
+                    Multiplicação (*)<br>
+                    Divisão (/)<br>
+                    <br>
+                    ficando restrita a situações de menor complexidade.
+                </p>
+
+            </div>
+
+        </div>
+        <div class="voltar">
+            <a href="index.html" target="_self"><input type="submit" value="Voltar" id="btvoltar"></a>
+        </div>
+    </main>
+    <footer>
+        <div class="esq">
+            <p>
+                Siga-me:        
+                <a href="https://github.com/vitorreismendes" target="_blank"><img src="calculator/211904_social_github_icon.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/vitor-reis-282260212/" target="_blank"><img src="calculator/216394_linkedin_social_icon.png" alt="Linkedin"></a>
+                <a href="https://www.instagram.com/vitorre1s/" target="_blank"><img src="calculator/7422497_instagram_photo_picture_social_icon.png" alt="Instagram"></a>
+            </p>
+        </div>
+        <div class="dir">
+            <p>Desenvolvido por Vitor Reis</p>
+        </div>
+    </footer>
+</body>
+
+</html>

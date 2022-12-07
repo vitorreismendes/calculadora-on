@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Dividendos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilocalc2d.css">
+    <script src="calculadorad.js"></script>
+</head>
+<body onresize="mudartamanho()">
+    <header>
+        <div class="logo">
+            <a href="index.html" target="_self"><img src="../logo-removebg-preview.png" alt="Logo" id="logo"></a>
+        </div>
+        <span id ="burguer" class="material-symbols-outlined" onclick="clicarmenu()">menu</span>
+        <nav id="btmenu" target="_blank">
+            <ul>
+                <li>
+                    <a href="calc1.html" target="_self">Calculadora <br> Normal</a>
+                </li>
+                <li>
+                    <a href="calc3jc.html" target="_self">Calculadora <br> Juros Compostos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="container">
+            <div class="texto">
+                <h1>Calculadora de Dividendos</h1>
+
+                <p>
+                    Quanto você precisaria ter investido para ter renda média mensal desejada?<br>
+                    Na calculadora de dividendos, você pode simular quanto você precisaria investir em uma ação ou fundo imobiliário para ele te dê um retorno em dividendos esperado.
+                </p>
+                <br>
+                <br>
+                <p>
+                    Acesse o site da <a href="https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/cotacoes/" target="_blank" class="b3">B3</a> para saber o valor exato das ações e a porcentagem(%) de Dividend Yield para ter uma experiência mais real no cálculo.
+                </p>
+            </div> 
+
+        </div>
+
+        <div class="lados">
+            <div class="blocoe">
+                <form>
+                    <p>
+                        Valor medio mensal que você gostaria de receber:
+                    </p>
+                    <div class="valormedio">
+                        <span>R$</span>
+                        <input type="number" name="valordese" id="valordese">
+                    </div>
+                    <br>
+                    <p>
+                        Formato do pagamento de dividendos:
+                    </p>
+                    <div class="formato">
+                        <ul>
+                            <!--<li><input type="radio" name="formato" id="valorfixo" >Valor Fixo</li>-->
+                            
+                            <li><input type="radio" name="formato" id="porcentagem" checked>Porcentagem</li>
+                        </ul>
+                    </div>
+                   <br>
+                   <div class="span">
+                       <p>Valor Unitário da Ação</p>
+                       <p>Dividend Yield </p>
+                   </div>
+                    <div class="preencher">
+            
+                        <div class="rs">
+                            <span>R$</span>
+                            <input type="number" name="valorac" id="valorac">
+                        </div>
+                
+                        <div class="porc">
+                            <span>%</span>
+                            <input type="number" name="porcendy" id="porcendy">
+                        </div>
+                    </div>
+                    <div class="botoes">
+                        <input type="button" value="Calcular" onclick="calcular()">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </form>
+            </div>
+            <div class="blocod">
+                <div id="res">
+                    <p>Preencha os dados para ver o resultado</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="voltar">
+            <a href="index.html" target="_self"><input type="submit" value="Voltar" id="btvoltar"></a>
+        </div>
+    </main>
+    <footer>
+        <div class="esq">
+            <p>
+                Siga-me:        
+                <a href="https://github.com/vitorreismendes" target="_blank"><img src="calculator/211904_social_github_icon.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/vitor-reis-282260212/" target="_blank"><img src="calculator/216394_linkedin_social_icon.png" alt="Linkedin"></a>
+                <a href="https://www.instagram.com/vitorre1s/" target="_blank"><img src="calculator/7422497_instagram_photo_picture_social_icon.png" alt="Instagram"></a>
+            </p>
+        </div>
+        <div class="dir">
+            <p>Desenvolvido por Vitor Reis</p>
+        </div>
+    </footer>
+</body>
+</html>

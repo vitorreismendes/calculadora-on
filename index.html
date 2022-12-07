@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilohome.css">
+    <script src="home.js" defer></script>
+</head>
+
+<body onresize="mudartamanho()">
+    
+    <header>
+        <div class="logo">
+            <a href="index.html" target="_self"><img src="../logo-removebg-preview.png" alt="Logo" id="logo"></a>
+        </div>
+        <span id ="burguer" class="material-symbols-outlined" onclick="clicarmenu()">menu</span>
+        
+        <nav id="btmenu">
+            <ul>
+                <li>
+                    <a href="calc1.html" target="_self">Calculadora <br> Normal</a>
+                </li>
+                <li>
+                    <a href="calc2d.html" target="_self">Calculadora <br> Dividendos</a>
+                </li>
+                <li>
+                    <a href="calc3jc.html" target="_self">Calculadora <br> Juros Compostos</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="bttema" class="headerd">
+            <p>Criativo </p>
+            <div class="tema">
+                <label for="modo" class="switch">
+                    <input type="checkbox" name="check" id="modo">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <p>Normal</p>
+        </div>
+    </header>
+    <main>
+
+        <h1>Selecione a calculadora abaixo:</h1> 
+
+        <div id="container">
+            <div class="blocoe">
+                <img src="calculator/normal1.jpg" alt="Calculadora">
+            
+                <h2>Calculadora Normal</h2>
+                <p>
+                    Como as calculadoras podem nos ajudar?<br>
+                    Como a habilidade de resolver problemas está diretamente relacionada ao números de problemas resolvidos corretamente, a calculadora é um recurso importante, com ela podemos ficar atentos no processo de resolução de problemas, ao invés de nos preocuparmos com cálculos longos e repetitivos.
+                </p>
+        
+
+                <div id="bt1">
+                    <a href="calc1.html" target="_self" >
+                        <input type="submit" value="Acessar" id="calc1">
+                    </a>
+                </div>
+            </div>
+
+            <div class="blocom">
+                <img src="calculator/dividendos1.jpg" alt="Calculadora">
+            
+                <h2>Calculadora de Dividendos</h2>
+                <p>
+                    Quanto você precisaria ter investido para ter renda média mensal desejada?<br>
+                    Na calculadora de dividendos, você pode simular quanto você precisaria investir em uma ação ou fundo imobiliário para ele te dê um retorno em dividendos esperado.
+                </p>
+            
+                <div id="bt2">
+                    <a href="calc2d.html" target="_self">
+                        <input type="submit" value="Acessar"  id="calc2">
+                    </a>
+                </div>
+            
+            </div>
+
+            <div class="blocod">
+                <img src="calculator/compostos1.jpg" alt="Calculadora">
+            
+                <h2>Calculadora de Juros Compostos</h2>
+                <p>
+                    Os juros compostos crescem de forma exponencial, pois sua base de cálculo é sempre em cima do montante anterior. Faça esse cálculo financeiro de forma simples utilizando nossa calculadora!
+                </p>
+                    
+                <div id="bt3">
+                    <a href="calc3jc.html" target="_self">
+                        <input type="submit" value="Acessar" id="calc3">
+                    </a>
+                </div>
+            </div>
+        </div>     
+    </main>
+    <footer>
+        <div class="esq">
+            <p>
+                Siga-me:        
+                <a href="https://github.com/vitorreismendes" target="_blank"><img src="calculator/211904_social_github_icon.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/vitor-reis-282260212/" target="_blank"><img src="calculator/216394_linkedin_social_icon.png" alt="Linkedin"></a>
+                <a href="https://www.instagram.com/vitorre1s/" target="_blank"><img src="calculator/7422497_instagram_photo_picture_social_icon.png" alt="Instagram"></a>
+            </p>
+        </div>
+        <div class="dir">
+            <p>Desenvolvido por Vitor Reis</p>
+        </div>
+    </footer>
+    
+    
+</body>
+
+</html>
+
